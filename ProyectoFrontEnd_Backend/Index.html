@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="divisas,comprar,online,dolar,euro,change,currency">
+    <meta name="author" content="Paola Gamarra">
+    <meta name="description" content="aplicacion venta de dolares y euro online, retirar los euros o dolares comprados en cajeros de casa de cambio ubicados en los aeropuertos" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/27010df775.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/calcularpago.js"></script>
+    <title>Compra Divisas DvC</title>
+
+</head>
+<body>
+    <header>
+        
+        <div class="videocontenedor">
+            <video class="video" autoplay loop muted>
+                <source src="img/logovideo.mp4" type="video/mp4">
+            </video>
+        </div>
+        <img src="img/ImagenDivisas.png" alt="logo">
+        <nav>
+            <ul>
+                <li>
+                    <a href="">Nosotros DvC</a>
+                </li>
+                <li>
+                    <a href="">Cajeros</a>
+                </li>
+                <li>
+                    <a href="http://localhost/Fullstack/ProyectoFrontEnd_Backend/registro.php" target="_blank">Registro</a>
+                </li>
+                <li>
+                    <a href="http://localhost/Fullstack/ProyectoFrontEnd_Backend/ingresar.php" target="_blank"><i class="fa-solid fa-user"></i>  Ingreso</a>
+                </li>
+
+
+            </ul>
+        </nav>
+
+    </header>
+    <main id="sesiondivisas">
+
+        <section id="comprardivisas">
+
+            <div class="letra">
+                <h1>COMPRA DE DIVISAS</h1>
+
+            </div>
+            <div class="letrados">
+                <div class="letradosp">
+                    <p>valor y divisas a comprar</p>
+                </div>
+                <div class="letradoss">
+                    <p>total a pagar</p>
+                </div>
+            </div>
+                      
+            <div class="divisas" action="comprardivisa.php" method="POST">
+
+                <input  type="number" value="0"  id="divisacomprar" name="divisacomprar" class="divisacomprar">
+                <select class="moneda_escoger" name="moneda_escoger"   id="moneda_escoger" onkeyup="myFunction();">
+                    <option value="1">DOLAR&emsp;💵</option>
+                    <option value="2">EURO&emsp;💶</option>
+                </select>
+                <span>  = </span>
+                <input type="number" id="costo" name="costo" class="costo" required onclick="myFunction()">
+                <select class="moneda_pago" name="moneda_pagar">
+                    <option value="3">COP&emsp;💵</option>
+                </select>
+
+            </div>
+            <div class="botoncomprar">
+                <button type="submit" class="comprar" name="comprar" id="comprar"   onclick="mensaje()">
+                    COMPRAR
+                </button>
+            </div>
+
+
+        </section>
+        <aside>
+
+            <table id="tablerosprecios">
+
+                <tr class="dolar">
+                    <td>precio 1 dolar</td>
+                    <td>$4350 Pesos Colombiano</td>
+                </tr>
+                <tr class="euro">
+                    <td>precio 1 euro</td>
+                    <td>$4560 pesos Colombinos</td>
+                </tr>
+            </table>
+
+            <img src="img/tableroprecios.png" alt="tableroprecio" />
+
+           
+        </aside>
+
+      </main>
+    
+
+    
+    <section id="informaciondvc">
+        
+
+            <p>
+                <b>1.</b> Elige la Modena quieres&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <br> Comprar
+            </p>
+            <p>
+                <b>2.</b>Compra tu Moneda&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+</p>
+            <p>
+                <b>3.</b> Retirala en nuestros Cajeros DvC
+            </p>
+            
+            <div class="iconos">
+
+
+                <a class="face">
+                    <i class="fa-brands fa-square-facebook"></i>
+                </a>
+                <a class="whatsap" href="">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a class="insta" href="">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+
+        
+    </section>
+</body>
+</html>
