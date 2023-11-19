@@ -279,12 +279,12 @@ aside img {
 @media (max-width: 1098px) {
 
     #comprardivisas {
-        width: 85%;
+        width: 80%;
         margin-left: 0;
     }
 
     aside {
-        width: 15%;
+        width: 19%;
         height: auto;
         position: relative
     }
@@ -297,7 +297,7 @@ aside img {
         position: relative;
         margin-left: 0px;
         margin-left: 5px;
-        margin-top:230px;
+        margin-top:330px;
     }
 
         table .dolar td {
@@ -311,40 +311,42 @@ aside img {
            
         }
 
-    #comprardivisas .divisas input {
-        margin-left: 3px;
-    }
+        #comprardivisas .divisas input {
+            margin-left: 2px;
+            Width: 30%;
+        }
         }
 
 @media (max-width: 846px) {
     #sesiondivisas {
         display: block;
+        height:auto;
     }
 
     #comprardivisas {
-        width: 100%;
+        width: 100;
+        height: auto;
        
     }
 
     aside {
         width: 100%;
-        height: 100px;
-         margin-top: 90px;
+        height: auto;
+         margin-top: 80px;
         
     }
 
     #comprardivisas .botoncomprar .comprar {
         
         width: 154px;
-        height: 55px;
+        height: 58px;
         left: 35%;
-        
         font-size: 24px;
         position:absolute;
     }
 
     #comprardivisas .divisas input {
-        Width: 21%;
+        Width: 26%;
         height: 40px;
         top: 0.5%;
         
@@ -403,5 +405,11 @@ aside img {
             padding: 20px,20px;
             font-size: 15px;
         }
+        #informaciondvc {
+            
+            height: auto;
+            
+        }
+        
 }
     
